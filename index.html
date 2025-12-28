@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نصر الدين الطاهر | رحلة مبرمج طموح</title>
+    
+    <!-- الخطوط -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- الأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <meta name="description" content="موقع نصر الدين الطاهر - مطور ويب وبوتات تيليجرام طموح">
+    <meta name="keywords" content="نصر الدين الطاهر, مطور ويب, بوتات تيليجرام, برمجة, تطوير مواقع">
+    <meta name="author" content="نصر الدين الطاهر">
+</head>
+<body>
+    <!-- تأثيرات الخلفية -->
+    <div class="bg-effects">
+        <canvas id="particleCanvas"></canvas>
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+    </div>
+
+    <!-- شريط التتبع -->
+    <div class="mobile-tracker"><div class="mobile-tracker-progress"></div></div>
+
+    <!-- شريط التنقل -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-icon">NT</span>
+                <span class="brand-text">نصر الدين الطاهر</span>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="#hero" class="nav-item active"><span class="nav-dot"></span><span class="nav-label">البداية</span></a>
+                <a href="#journey" class="nav-item"><span class="nav-dot"></span><span class="nav-label">الرحلة</span></a>
+                <a href="#creations" class="nav-item"><span class="nav-dot"></span><span class="nav-label">الإبداعات</span></a>
+                <a href="#visions" class="nav-item"><span class="nav-dot"></span><span class="nav-label">الرؤى</span></a>
+                <a href="#connect" class="nav-item"><span class="nav-dot"></span><span class="nav-label">الاتصال</span></a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="theme-switch" id="themeSwitch" aria-label="تبديل الوضع الداكن/الفاتح">
+                    <div class="switch-track">
+                        <div class="switch-thumb">
+                            <i class="fas fa-sun"></i>
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="nav-indicator mobile-indicator"><span class="indicator-line mobile-line"></span></div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <section class="hero-section" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge pulse-animation">
+                    <span class="badge-text">مرحباً في عالمي الرقمي</span>
+                    <div class="badge-glow"></div>
+                </div>
+                
+                <div class="hero-title">
+                    <h1 class="title-line title-main"><span class="text-gradient">نصر الدين الطاهر</span></h1>
+                    <div class="title-line title-sub">
+                        <div class="typing-wrapper">
+                            <span class="typing-text" id="dynamicText"></span>
+                            <span class="typing-cursor">|</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-description">
+                    <div class="description-card glass-card">
+                        <p class="description-text">
+                            شاب طموح يجمع بين الإبداع والتقنية. حاصل على الشهادة الثانوية وأعمل بجد لتحويل شغفي بالبرمجة إلى واقع ملموس. أطور حلول ويب مبتكرة وبوتات تيليجرام ذكية، وأسعى لدراسة هندسة البرمجيات لتحقيق طموحاتي.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-container">
+                        <div class="stat-item hologram"><div class="stat-value">06</div><div class="stat-label">مشاريع منجزة</div></div>
+                        <div class="stat-item hologram"><div class="stat-value">∞</div><div class="stat-label">إمكانيات غير محدودة</div></div>
+                        <div class="stat-item hologram"><div class="stat-value">100%</div><div class="stat-label">التزام وتفانٍ</div></div>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#creations" class="action-btn primary-btn neon-border">
+                        <span class="btn-glow"></span>
+                        <span class="btn-content"><i class="fas fa-bolt"></i><span>استكشاف مشاريعي</span></span>
+                    </a>
+                    <a href="#connect" class="action-btn outline-btn">
+                        <span class="btn-content"><i class="fas fa-comment-dots"></i><span>لنتحدث</span></span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="visual-container">
+                    <div class="profile-hologram">
+                        <div class="hologram-base"></div>
+                        <div class="hologram-image">
+                            <img src="images/profile/nasr.jpg" alt="نصر الدين الطاهر" 
+                                 onerror="this.onerror=null; this.src='images/profile/default.svg';"
+                                 loading="lazy">
+                        </div>
+                        <div class="hologram-glow"></div>
+                        <div class="hologram-grid"></div>
+                    </div>
+                    
+                    <div class="tech-orbits">
+                        <div class="orbit orbit-1"><div class="orbit-item"><i class="fab fa-python"></i></div></div>
+                        <div class="orbit orbit-2">
+                            <div class="orbit-item"><i class="fab fa-html5"></i></div>
+                            <div class="orbit-item"><i class="fab fa-js"></i></div>
+                        </div>
+                        <div class="orbit orbit-3">
+                            <div class="orbit-item"><i class="fab fa-telegram"></i></div>
+                            <div class="orbit-item"><i class="fab fa-android"></i></div>
+                            <div class="orbit-item"><i class="fas fa-database"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-guide">
+            <div class="guide-line"></div>
+            <div class="guide-pulse"></div>
+        </div>
+    </section>
+
+    <!-- قسم الرحلة -->
+    <section class="journey-section" id="journey">
+        <div class="section-header">
+            <div class="header-decoration">
+                <div class="decoration-line"></div>
+                <div class="decoration-dot"></div>
+                <div class="decoration-line"></div>
+            </div>
+            <h2 class="section-title"><span class="title-number">01</span><span class="title-text">رحلة التكوين</span></h2>
+            <p class="section-subtitle">من حب البرمجة منذ الصغر إلى الإتقان</p>
+        </div>
+        
+        <div class="journey-timeline">
+            <div class="timeline-track">
+                <div class="timeline-item center-item">
+                    <div class="item-card glass-card">
+                        <div class="item-icon"><i class="fas fa-heart"></i></div>
+                        <div class="item-content">
+                            <h3 class="item-title">شغف منذ الصغر</h3>
+                            <p class="item-description">منذ طفولتي وأنا شغوف بالتقنية والحاسوب، وهذا الشغف كان البذرة الأولى لرحلتي في عالم البرمجة.</p>
+                        </div>
+                        <div class="item-year">الطفولة</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item center-item">
+                    <div class="item-card glass-card">
+                        <div class="item-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="item-content">
+                            <h3 class="item-title">التخرج الثانوي</h3>
+                            <p class="item-description">حصلت على الشهادة الثانوية عام 2022، وكانت هذه المرحلة تمهيداً للانطلاق نحو عالم البرمجة بشكل جدي.</p>
+                        </div>
+                        <div class="item-year">2022</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item center-item">
+                    <div class="item-card glass-card">
+                        <div class="item-icon"><i class="fas fa-code"></i></div>
+                        <div class="item-content">
+                            <h3 class="item-title">انطلاق الرحلة البرمجية</h3>
+                            <p class="item-description">بدأت رحلتي البرمجية الفعلية في 2024، حيث تعلمت أساسيات البرمجة وتطوير الويب، وبدأت في بناء أول مشاريعي التقنية.</p>
+                        </div>
+                        <div class="item-year">2024</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item center-item">
+                    <div class="item-card glass-card">
+                        <div class="item-icon"><i class="fas fa-robot"></i></div>
+                        <div class="item-content">
+                            <h3 class="item-title">عالم بوتات تيليجرام وتطبيقات أندرويد</h3>
+                            <p class="item-description">بدأت في برمجة بوتات تيليجرام الذكية، وإنشاء تطبيقات أندرويد مفيدة للمجتمع.</p>
+                        </div>
+                        <div class="item-year">2024</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item center-item future-item">
+                    <div class="item-card glass-card">
+                        <div class="item-icon"><i class="fas fa-university"></i></div>
+                        <div class="item-content">
+                            <h3 class="item-title">رحلة الهندسة البرمجية</h3>
+                            <p class="item-description">أسعى لدراسة هندسة البرمجيات لتطوير مهاراتي بشكل أكاديمي ومهني، والمساهمة في تطوير التقنية العربية.</p>
+                        </div>
+                        <div class="item-year">المستقبل</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="journey-skills">
+            <h3 class="skills-title">إمكانياتي <span class="highlight">التقنية</span></h3>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">تطوير الويب</h3>
+                    <div class="skill-meter">
+                        <div class="meter-fill" data-level="95"><span class="fill-text">HTML5</span></div>
+                        <div class="meter-fill" data-level="90"><span class="fill-text">CSS3</span></div>
+                        <div class="meter-fill" data-level="85"><span class="fill-text">JavaScript</span></div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">بوتات تيليجرام وتطبيقات أندرويد</h3>
+                    <div class="skill-meter">
+                        <div class="meter-fill" data-level="88"><span class="fill-text">Python</span></div>
+                        <div class="meter-fill" data-level="85"><span class="fill-text">Telegram API</span></div>
+                        <div class="meter-fill" data-level="82"><span class="fill-text">Android Apps</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإبداعات -->
+    <section class="creations-section" id="creations">
+        <div class="section-header">
+            <div class="header-decoration">
+                <div class="decoration-line"></div>
+                <div class="decoration-dot"></div>
+                <div class="decoration-line"></div>
+            </div>
+            <h2 class="section-title"><span class="title-number">02</span><span class="title-text">عالم الإبداعات</span></h2>
+            <p class="section-subtitle">حيث الأفكار تتحول إلى واقع</p>
+        </div>
+        
+        <div class="creations-grid" id="projectsGrid">
+            <!-- المشاريع يتم إضافتها ديناميكياً -->
+        </div>
+    </section>
+
+    <!-- قسم الرؤى -->
+    <section class="visions-section" id="visions">
+        <div class="section-header">
+            <div class="header-decoration">
+                <div class="decoration-line"></div>
+                <div class="decoration-dot"></div>
+                <div class="decoration-line"></div>
+            </div>
+            <h2 class="section-title"><span class="title-number">03</span><span class="title-text">الرؤى المستقبلية</span></h2>
+            <p class="section-subtitle">حيث أتجه</p>
+        </div>
+        
+        <div class="visions-container">
+            <div class="vision-card focus-card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3 class="card-title">التركيز الحالي</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="vision-list">
+                        <li>تطوير مهارات Python المتقدمة</li>
+                        <li>إنشاء تطبيقات أندرويد متخصصة</li>
+                        <li>بناء محفظة مشاريع متنوعة</li>
+                        <li>تعزيز مهارات التصميم UX/UI</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="vision-card goal-card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-flag"></i></div>
+                    <h3 class="card-title">الأهداف القريبة</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="vision-list">
+                        <li>الالتحاق بجامعة في هندسة البرمجيات</li>
+                        <li>العمل على مشاريع حرة متخصصة</li>
+                        <li>تطوير بوتات ذكاء اصطناعي متقدمة</li>
+                        <li>المساهمة في مشاريع مفتوحة المصدر</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="vision-card dream-card">
+                <div class="card-header">
+                    <div class="card-icon"><i class="fas fa-star"></i></div>
+                    <h3 class="card-title">الأحلام البعيدة</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="vision-list">
+                        <li>تأسيس شركة تقنية ناشئة</li>
+                        <li>تطوير حلول برمجية للعالم العربي</li>
+                        <li>تدريب وتوجيه مبرمجين جدد</li>
+                        <li>المساهمة في البحث العلمي البرمجي</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المعرض -->
+    <section class="gallery-section">
+        <div class="section-header">
+            <div class="header-decoration">
+                <div class="decoration-line"></div>
+                <div class="decoration-dot"></div>
+                <div class="decoration-line"></div>
+            </div>
+            <h2 class="section-title"><span class="title-number">04</span><span class="title-text">معرض الأعمال</span></h2>
+            <p class="section-subtitle">لقطات من رحلتي البرمجية</p>
+        </div>
+        
+        <div class="gallery-container" id="dynamicGallery">
+            <!-- يتم تحميل الصور تلقائياً -->
+        </div>
+    </section>
+
+    <!-- قسم الاتصال -->
+    <section class="connect-section" id="connect">
+        <div class="section-header">
+            <div class="header-decoration">
+                <div class="decoration-line"></div>
+                <div class="decoration-dot"></div>
+                <div class="decoration-line"></div>
+            </div>
+            <h2 class="section-title"><span class="title-number">05</span><span class="title-text">لنتواصل</span></h2>
+            <p class="section-subtitle">دعنا نصنع شيئاً معاً</p>
+        </div>
+        
+        <div class="connect-content">
+            <div class="contact-portals">
+                <a href="mailto:nasradeentaher@gmail.com" class="portal-card email-portal">
+                    <div class="portal-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    <div class="portal-content">
+                        <h4 class="portal-title">رسالة مباشرة</h4>
+                        <p class="portal-address">nasradeentaher@gmail.com</p>
+                        <span class="portal-action">انقر للإرسال</span>
+                    </div>
+                    <div class="portal-glow"></div>
+                </a>
+                
+                <a href="https://wa.me/249122786879" target="_blank" class="portal-card whatsapp-portal">
+                    <div class="portal-icon"><i class="fab fa-whatsapp"></i></div>
+                    <div class="portal-content">
+                        <h4 class="portal-title">محادثة فورية</h4>
+                        <p class="portal-address">+249 122 786 879</p>
+                        <span class="portal-action">انقر للدردشة</span>
+                    </div>
+                    <div class="portal-glow"></div>
+                </a>
+            </div>
+            
+            <div class="social-network">
+                <h3 class="network-title">وسائل التواصل الاجتماعي</h3>
+                <div class="network-ring">
+                    <a href="https://wa.me/249122786879" target="_blank" class="network-node" data-tooltip="واتساب"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:nasradeentaher@gmail.com" class="network-node" data-tooltip="البريد"><i class="fas fa-envelope"></i></a>
+                    <a href="https://t.me/nasradeentaher" target="_blank" class="network-node" data-tooltip="تيليجرام"><i class="fab fa-telegram"></i></a>
+                    <a href="https://facebook.com/nasradeentaher" target="_blank" class="network-node" data-tooltip="فيسبوك"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/nasradeentaher" target="_blank" class="network-node" data-tooltip="إنستجرام"><i class="fab fa-instagram"></i></a>
+                    <a href="https://snapchat.com/add/nasradeentaher" target="_blank" class="network-node" data-tooltip="سناب شات"><i class="fab fa-snapchat-ghost"></i></a>
+                    <a href="https://youtube.com/@nasradeentaher" target="_blank" class="network-node" data-tooltip="يوتيوب"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="micro-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="footer-logo">NT</span>
+                <span class="footer-name">نصر الدين الطاهر</span>
+            </div>
+            
+            <div class="footer-tagline">مبرمج، مبتكر، ومستقبل واعد</div>
+            
+            <div class="footer-info">
+                <div class="footer-year"><span id="currentYear"></span> © جميع الحقوق محفوظة</div>
+                <div class="footer-location"><i class="fas fa-map-marker-alt"></i><span>السودان</span></div>
+            </div>
+            
+            <div class="footer-back-to-top">
+                <a href="#hero" class="back-to-top-btn"><i class="fas fa-chevron-up"></i><span>العودة للأعلى</span></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/particles.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
